@@ -31,7 +31,7 @@ Pixabay API key - [Click Here](https://pixabay.com/api/docs/)
 Clone the project
 
 ```bash
-  git clone 
+  git clone https://github.com/Geyanth08/Random_Gallery.git
 ```
 
 Go to the project directory
