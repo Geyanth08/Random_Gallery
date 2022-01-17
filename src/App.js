@@ -1,7 +1,21 @@
-export default function App() {
+import React, { useState } from 'react'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import ImageGrid from './components/ImageGrid'
+import SearchBar from './components/SearchBar'
+
+function App() {
+
+  const [term,setTerm] = useState('');
+
   return (
-    <h1 className="text-3xl font-bold underline bg-green-900 text-red-700">
-      Hello world!
-    </h1>
+    <div>
+      <Header />
+      <SearchBar searchText={(text) => setTerm(text)} />
+      <ImageGrid term={term} />
+      <Footer />
+    </div>
   )
 }
+
+export default App
